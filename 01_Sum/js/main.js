@@ -6,8 +6,8 @@ alert(sum);
 
 /* example - 2 */
 let sum=0;
-let numFirst= Number(prompt("Birinci Sayi:"));
-let numSecond= Number(prompt("İkinci Sayi:"));
+let numFirst= Number(prompt("First Number:"));
+let numSecond= Number(prompt("Second Number:"));
 sum= numFirst+numSecond
 document.write("Sum: ",sum);
 
