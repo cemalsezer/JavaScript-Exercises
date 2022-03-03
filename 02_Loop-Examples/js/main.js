@@ -16,7 +16,7 @@ var userName="quest";
 var userPassword="1923";
 var logControl=false;
 
-while(logControl==false){
+while(!logControl){
      var responseName = prompt("Enter to Name");  
      var responsePass = prompt("Enter to Password");  
         if((userName==responseName)&&(userPassword==responsePass)){
