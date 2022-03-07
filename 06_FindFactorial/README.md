@@ -1,0 +1,1 @@
+![image](https://github.com/cemalsezer/JavaScript-Exercises/blob/main/06_FindFactorial/img/factorial.PNG)
