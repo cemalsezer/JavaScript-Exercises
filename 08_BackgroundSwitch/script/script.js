@@ -1,3 +1,6 @@
 function switchBackGround(){
-    document.getElementsByName("body").style.backgroundColor="black";
+    document.getElementById("container").style.backgroundColor="black";
+}
+function reswitchBackGround(){
+    document.getElementById("container").style.backgroundColor="aqua";
 }

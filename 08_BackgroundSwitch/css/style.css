@@ -1,12 +1,16 @@
 #container{
     height: 100px;
     width: auto;
-    margin: 0 auto;
+    margin: auto;
     background-color: aqua;
     display: flex;
     justify-content: center;
 }
 .switch{
+    height: 20px;
+    margin: auto;
+}
+.reswitch{
     height: 20px;
     margin: auto;
 }
