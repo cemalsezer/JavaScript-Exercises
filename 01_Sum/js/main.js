@@ -19,6 +19,3 @@ function sum(){
    document.getElementById("text").innerHTML=`Sum: ${sum}`;
 }
 
-
-
-
