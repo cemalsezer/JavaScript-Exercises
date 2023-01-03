@@ -8,8 +8,20 @@
     <title>Document</title>
 </head>
 <body>
+<label for="firstNumber">First Number:</label>
+<input type="number" id="firstNumber" pattern=”\d*”>
+<label for="secondNumber">Second Number:</label>
+<input type="number" name="" id="secondNumber">
 
+<select name="" id="choise">
+    <option value="topla">+</option>
+    <option value="cikart">-</option>
+    <option value="carp">*</option>
+    <option value="bol">/</option>
+</select>
 
+<button id="proces" onclick="calculate()">CALCULATE</button>
+<div class="sonuc"></div>
 <script src="js/main.js"></script>
 </body>
 </html>
