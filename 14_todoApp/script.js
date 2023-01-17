@@ -7,8 +7,10 @@ let todos;
 
 loadItems();
 
+//Yeni görev ekleme
 form.addEventListener("submit", newItemAdd);
 
+//Seçilen görevleri silme
 taskList.addEventListener("click", function (e) {
   if (e.target.className === "fas fa-times") {
     if (confirm("Are u sure?") == true) {
@@ -19,15 +21,17 @@ taskList.addEventListener("click", function (e) {
   e.preventDefault();
 });
 
+//Tümm görevleri silme
 btnDeleteAll.addEventListener("click", deleteAllItems);
 
 function loadItems() {
   todos = getItemFromLS();
-  todos.forEach(function (item) {
+  todos.forEach(function(item) {
     createItem(item);
   });
 }
 
+//Localstorage üzerinden görevleri ekleme
 function getItemFromLS() {
     if (localStorage.getItem("todos") === null) {
       todos = [];
@@ -35,8 +39,9 @@ function getItemFromLS() {
       todos = JSON.parse(localStorage.getItem("todos"));
     }
     return todos;
-  }
+}
 
+//Localstorage üzerinden görevleri silme
 function deleteTodoFromStorage(deletetodo){
     let todos = getItemFromLS();
 
@@ -49,6 +54,7 @@ function deleteTodoFromStorage(deletetodo){
     localStorage.setItem("todos",JSON.stringify(todos));
 }
 
+//Tüm görevleri silme fonksiyonu
 function deleteAllItems(e) {
   if (confirm("Are u sure?") == true) {
     // taskList.innerHTML = "";
